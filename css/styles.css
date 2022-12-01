@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+}
+
+/* Hero background, image, text, and scaling */
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/TE_1.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    /* Position: absolute = defaults width to zero... */
+    width:97vw;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/TE_1.jpg");
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+    .hero-image {
+        background-size: contain;
+    }
+}
