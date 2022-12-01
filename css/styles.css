@@ -1,23 +1,30 @@
 body, html {
     height: 100%;
+    font-size: 1.1rem;
 }
 
-/* Hero background, image, text, and scaling */
+button {
+    font-size: 1.5rem;
+}
+
+/* ***** */
+/* Hero page*/
+/* ***** */
 .hero-bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/TE_1.jpg");
-    height: 70%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     position:absolute;
     /* Position: absolute = defaults width to zero... */
-    width:97vw;
+    width:99vw;
     filter: blur(8px);
   -webkit-filter: blur(8px);
 }
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/TE_1.jpg");
-    height: 70%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,4 +44,51 @@ body, html {
     .hero-image {
         background-size: contain;
     }
+}
+
+
+/* *****  */
+/* Background page */
+/* *****  */
+.bg-container {
+    height:100%;
+    display: flex;
+}
+
+
+
+
+/* ***** */
+/* Progamming page */
+/* ***** */
+.pg-container {
+    height:100%;
+    display: grid;
+}
+
+
+/* ***** */
+/* Science Mentorship page */
+/* ***** */
+.sci-container {
+    height:100%;
+    display: grid;
+}
+
+
+/* ***** */
+/* Nutrition page */
+/* ***** */
+.nutri-container {
+    height:100%;
+    display: flex;
+}
+
+
+/* ***** */
+/* Traveling page */
+/* ***** */
+.trav-container {
+    height:100%;
+    display: flex;
 }
