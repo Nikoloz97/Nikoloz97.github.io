@@ -55,6 +55,30 @@ button {
     display: flex;
 }
 
+.bg-container > article {
+    width: 50%;
+}
+
+.bg-container > article#bg-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-container > article#bg-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+article#bg-img-container > div {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+}
 
 
 
@@ -64,7 +88,31 @@ button {
 .pg-container {
     height:100%;
     display: grid;
+    grid-template-areas:
+    "pg-header pg-header"
+    "pg-desc pg-skills"
+    "pg-proj pg-proj";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 40% 40%;
 }
+
+#pg-header {
+    grid-area: pg-header;
+}
+
+#pg-desc {
+    grid-area: pg-desc;
+}
+
+#pg-skills {
+    grid-area: pg-skills;
+}
+
+#pg-proj {
+    grid-area: pg-proj;
+}
+
+
 
 
 /* ***** */
@@ -73,6 +121,28 @@ button {
 .sci-container {
     height:100%;
     display: grid;
+    grid-template-areas:
+    "sci-header sci-header"
+    "sci-desc sci-skills"
+    "sc-desc sci-slideshow";
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns: 50% 50%;
+}
+
+#sci-header {
+    grid-area: sci-header
+}
+
+#sci-desc {
+    grid-area: sci-desc
+}
+
+#sci-skills {
+    grid-area: sci-skills
+}
+
+#sci-slideshow {
+    grid-area: sci-slideshow
 }
 
 
@@ -81,8 +151,26 @@ button {
 /* ***** */
 .nutri-container {
     height:100%;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "sci-header sci-header"
+    "sci-desc sci-photos";
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 50% 50%;
 }
+
+#sci-header {
+    grid-area: sci-header;
+}
+
+#sci-desc {
+    grid-area: sic-desc;
+}
+
+#sci-photos {
+    grid-area: sci-photos;
+}
+
 
 
 /* ***** */
@@ -90,5 +178,21 @@ button {
 /* ***** */
 .trav-container {
     height:100%;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "trav-header trav-header"
+    "trav-desc trav-slideshow";
+    grid-template-rows: 20% 80%;
+}
+
+#trav-header {
+    grid-area: trav-header;
+}
+
+#trav-desc {
+    grid-area: trav-desc;
+}
+
+#trav-slideshow {
+    grid-area: trav-slideshow;
 }
