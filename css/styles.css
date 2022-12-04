@@ -21,6 +21,12 @@ header.title {
     align-items: center;
 }
 
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ***** */
 /* Hero page*/
 /* ***** */
@@ -136,8 +142,9 @@ article#bg-img-container > div > img {
     grid-area: pg-proj;
 }
 
-
-
+article#pg-proj {
+    justify-content: space-evenly;
+}
 
 
 
@@ -150,7 +157,7 @@ article#bg-img-container > div > img {
     grid-template-areas:
     "sci-header sci-header"
     "sci-desc sci-skills"
-    "sc-desc sci-slideshow";
+    "sci-slideshow sci-slideshow";
     grid-template-rows: 20% 40% 40%;
     grid-template-columns: 50% 50%;
     background-color: #eee;
@@ -226,4 +233,8 @@ article#bg-img-container > div > img {
 
 #trav-slideshow {
     grid-area: trav-slideshow;
+}
+
+article#trav-slideshow {
+    flex-direction: column;
 }
