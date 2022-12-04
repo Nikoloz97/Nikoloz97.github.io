@@ -15,6 +15,12 @@ h1 {
     font-size: 5rem;
 }
 
+header.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ***** */
 /* Hero page*/
 /* ***** */
@@ -130,11 +136,7 @@ article#bg-img-container > div > img {
     grid-area: pg-proj;
 }
 
-.pg-container > header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 
@@ -178,24 +180,24 @@ article#bg-img-container > div > img {
     height:100%;
     display: grid;
     grid-template-areas: 
-    "sci-header sci-header"
-    "sci-desc sci-photos";
+    "nutri-header nutri-header"
+    "nutri-desc nutri-photos";
     grid-template-rows: 20% 80%;
     grid-template-columns: 50% 50%;
     background-color: #f9f6f6;
 
 }
 
-#sci-header {
-    grid-area: sci-header;
+#nutri-header {
+    grid-area: nutri-header;
 }
 
-#sci-desc {
-    grid-area: sic-desc;
+#nutri-desc {
+    grid-area: nutri-desc;
 }
 
-#sci-photos {
-    grid-area: sci-photos;
+#nutri-photos {
+    grid-area: nutri-photos;
 }
 
 
